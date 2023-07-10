@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import prisma from "../../../../prisma";
 import { Prisma } from "@prisma/client";
 
-async function main() {
+export async function main() {
     try {
         await prisma.$connect();
     } catch (error) {
